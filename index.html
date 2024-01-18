@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Number Game</title>
+    <link rel="stylesheet" href="/guessNum/style.css">
+</head>
+<body style="background-color:#212121; color:#fff">
+    <nav>
+        <a href="youtube.com">Youtube</a>
+        <a href="google.com">google</a>
+    </nav>
+    <div id="wrapper">
+        <h1>Number guess game</h1>
+        <p>Try and guess a random number between 1 and 10.</p>
+        <p>You have 5 attempts to guess the right number.</p>
+        <br>
+        <form class="form">
+            <label for="guessField" id="guess">Guess the Number</label>
+            <input type="text" id="guessField" class="guessField">
+            <input type="submit" id="submit-btn" value="Start Guess" class="submitGuess">
+        </form>
+        <div class="resultPara">
+            <p>Previous guesses: <span class="guesses"></span></p>
+            <p>Guesses Remaining: <span class="remainingGuess">10</span></p>
+            <p class="lowOrHi"></p>
+        </div>
+    </div>
+    <script src="/guessNum/index.js"></script>
+</body>
+</html>
